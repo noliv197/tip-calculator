@@ -15,30 +15,75 @@
   </style>
 </head>
 <body>
+  <main>
+    <h1>SPLITTER</h1>
 
-  Bill
+    <form id="tip-form">
+      <section>
+        <div>
+          <label for="bill">Bill</label>
+          <input id="bill" type="number" value="0" required>
+        </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <fieldset>
+          <legend>Select Tip %</legend>
+          <div>
+            <label for="five">5%</label>
+            <input type="radio" name="percent" id="five">
+          </div>
+          <div>
+            <label for="ten">10%</label>
+            <input type="radio" name="percent" id="ten">
+          </div>
+          <div>
+            <label for="fifteen">15%</label>
+            <input type="radio" name="percent" id="fifteen" checked>
+          </div>
+          <div>
+            <label for="twenty-five">25%</label>
+            <input type="radio" name="percent" id="twenty-five">
+          </div>
+          <div>
+            <label for="fifty">50%</label>
+            <input type="radio" name="percent" id="fifty">
+          </div>
+          <div>
+            <label for="custom">CUSTOM</label>
+            <input type="number" name="percent" id="custom" placeholder="CUSTOM">
+          </div>
+        </fieldset>
 
-  Number of People
+        <div>
+          <label for="qnt-people">Number of People</label>
+          <input type="number" id="qnt-people" value="1">
+        </div>
+      </section>
 
-  Tip Amount
-  / person
+      <section>
+        <div>
+          <label for="tip-amount">
+            Tip Amount
+            <span>/ person</span>
+          </label>
+          <output id="tip-amount" value="0">0</output>
+        </div>
 
-  Total
-  / person
+        <div>
+          <label for="total">
+            Total
+            <span>/ person</span>
+          </label>
+          <output id="total" value="0">0</output>
+        </div>
 
-  Reset
-  
-  <div class="attribution">
+        <button type="reset">RESET</button>
+      </section>
+    </form>
+  </main>
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Natalia Oliveira</a>.
-  </div>
+  </footer>
 </body>
 </html>
