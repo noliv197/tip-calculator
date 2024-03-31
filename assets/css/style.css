@@ -1,0 +1,173 @@
+
+/* Main Content Style */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-cyan);
+    font-size: var(--font-size);
+    margin-bottom: 2rem;
+}
+
+/* Form Style */
+form {
+    font-size: var(--font-size);
+    font-weight: 700;
+    display: flex;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4); 
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4);
+}
+
+/* Input Section Style */
+section#bill {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+fieldset{
+    border: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+fieldset label {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 8px;
+}
+
+fieldset label.hide {
+    display: none;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input#custom::placeholder {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+    font-weight: 700;
+}
+
+input[type='number'] {
+    width: 100%;
+    padding: .5rem;
+    text-align: end;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--very-light-grayish-cyan);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--light-grayish-cyan);
+}
+
+input#custom {
+    text-align: center;
+    color: var(--secondary-color);
+    width: 100%;
+    padding: .5rem 0;
+    height: 100%;
+}
+
+.main-label {
+    color: var(--grayish-cyan);
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+/* Icon Style */
+.icon-container {
+    position: relative;
+}
+
+.icon-container > input {
+    padding-left: 50px;
+}
+
+svg {
+    width: 15px;
+    height: 15px;
+    fill: var(--grayish-cyan);
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+
+
+/* Output Section Style */
+section#output {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+section#output .output-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#output label {
+    color: var(--white);
+} 
+
+#output label > span {
+    color: var(--dark-grayish-cyan);
+    display: block;
+}
+
+#output output {
+    color: var(--primary-color);
+    font-size: var(--font-size);
+}
+
+#output button {
+    background-color: var(--dark-grayish-cyan);
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* Footer Style */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+footer a {
+    color: #333;
+}
