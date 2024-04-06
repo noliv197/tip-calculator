@@ -5,7 +5,8 @@
     --desktop-size: 1440px;
 
     /* Font */
-    --font-size: 1.5rem;
+    --font-size: 1.25rem;
+    --font-size-big: 2rem;
     --font-family: "Space Mono", monospace;
 
     /* Color */
@@ -15,7 +16,10 @@
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --active-color: #3ddfca;
+    --hover-color: #39fae0;
     --white: hsl(0, 0%, 100%);
+    --warning: rgb(217, 147, 17);
 }
 
 
