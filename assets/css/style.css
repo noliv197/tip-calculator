@@ -81,6 +81,13 @@ input[type='number'] {
     font-size: var(--font-size);
     color: var(--secondary-color);
     background-color: var(--very-light-grayish-cyan);
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type='number']::placeholder {
